@@ -82,7 +82,10 @@ module.exports = (env)=>{
                 directory: path.join(__dirname),
             },
             compress: true,
-            port: 9000,
+            historyApiFallback: true,
+            liveReload: true,
+            open:true
+            //port: 9000,
         },
     };
     return config;
